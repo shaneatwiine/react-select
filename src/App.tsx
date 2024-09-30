@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Select, SelectOption } from "./Select"
 import { MultiSelect } from "./MultiSelect"
+import NumberFormatter from "./NumberFormatter"
 
 const options = [
   { label: "First", value: 1 },
@@ -23,6 +24,7 @@ function App() {
       />
       <br />
       <Select options={options} value={value2} onChange={o => setValue2(o)} />
+      <NumberFormatter />
     </>
   )
 }
